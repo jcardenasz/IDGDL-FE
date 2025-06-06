@@ -7,5 +7,6 @@ import { Component } from '@angular/core';
   styleUrl: './cotizaciones.css'
 })
 export class Cotizaciones {
-
+  constructor() {
+  }
 }

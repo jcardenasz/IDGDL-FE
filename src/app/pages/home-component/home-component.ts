@@ -8,10 +8,6 @@ import { Component } from '@angular/core';
 })
 export class HomeComponent {
   constructor() {
-    // Initialization logic can go here
   }
 
-  showThings(){
-    console.log("main component home working")
-  }
 }
