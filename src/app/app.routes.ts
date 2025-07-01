@@ -11,7 +11,8 @@ export const routes: Routes = [
     path: '',
     component: MainLayout,
     children: [
-      { path: 'home', component: HomeComponent }, // default child route
+      { path: '', redirectTo: 'home', pathMatch: 'full' },
+      { path: 'home', component: HomeComponent },
       { path: 'productos', component: Productos },
       { path: 'cotizaciones', component: Cotizaciones },
       { path: 'contactenos', component: Contactenos },
