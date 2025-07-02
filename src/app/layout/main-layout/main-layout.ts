@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
-import { Navbar } from '../../components/navbar/navbar';
-import { Footer } from '../../components/footer/footer';
-import { WhatsappButton } from '../../components/whatsapp-button/wha-button';
+import { Navbar } from '../../components/molecules/navbar/navbar';
+import { Footer } from '../../components/molecules/footer/footer';
+import { WhatsappButton } from '../../components/atoms/whatsapp-button/wha-button';
 import { RouterOutlet } from '@angular/router';
 
 @Component({

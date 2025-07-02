@@ -1,0 +1,45 @@
+<div class="fixed-card max-w-44 sm:max-w-48 md:max-w-52 lg:max-w-56 xl:max-w-60 hover:scale-105 transition-transform duration-200 overflow-hidden bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
+  <!-- Product Image -->
+  <a href="#" class="block">
+    <img 
+      class="rounded-t-lg w-full h-48 object-cover" 
+      [src]="imgSrc" 
+      [alt]="'imagen ' + title"
+    />
+  </a>
+  
+  <!-- Card Body -->
+  <div class="p-5">
+    <a href="#" class="block">
+      <!-- Product Title -->
+      <h5 class="text-lg md:text-xl font-semibold tracking-tight text-gray-900 dark:text-white mb-2">
+        {{ title }}
+      </h5>
+    </a>
+    
+    <a href="#" class="block">
+      <!-- Brand -->
+      <p class="mt-1 text-red-600 hover:text-red-700 dark:text-white">
+        {{ brand }}
+      </p>
+    </a>
+    
+    <div class="flex items-center justify-between gap-x-0.5 mt-3">
+      <!-- Price -->
+      <span class="text-lg md:text-lg xl:text-xl font-medium text-gray-900 hover:text-red-600 hover:scale-105 dark:text-white">
+        ${{ price }} COP
+      </span>
+      
+      <!-- Add to Cart Button -->
+      <button
+        (click)="onAddToCart()"
+        class="rounded-lg bg-cyan-700 py-2 px-3 text-center text-sm md:text-xs text-white hover:bg-cyan-800 focus:outline-none focus:ring-4 focus:ring-cyan-300 dark:bg-cyan-600 dark:hover:bg-cyan-700 dark:focus:ring-cyan-800 transition-colors duration-200"
+      >
+        <!-- Add Circle Icon (SVG equivalent of MdOutlineAddCircleOutline) -->
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
+        </svg>
+      </button>
+    </div>
+  </div>
+</div>

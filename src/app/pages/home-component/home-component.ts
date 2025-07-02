@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { Jumbotron } from '../../components/jumbotron/jumbotron';
-import { Map } from '../../components/map/map';
+import { Jumbotron } from '../../components/atoms/jumbotron/jumbotron';
+import { Map } from '../../components/atoms/map/map';
 
 @Component({
   selector: 'app-home-component',

@@ -1,1 +1,10 @@
-<p>productos works!</p>
+<div className="grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 p-4">
+    <app-card className="pl-5"
+    title="Guantes de Seguridad"
+    brand="Marca Industrial"
+    [price]="45000"
+    imgSrc="https://picsum.photos/200/300"
+    (addToCart)="onAddToCart($event)">
+  </app-card>
+</div>
+

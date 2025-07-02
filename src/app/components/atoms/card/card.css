@@ -1,0 +1,45 @@
+.fixed-card {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  min-height: 320px;
+}
+
+.fixed-card img {
+  width: 100%;
+  height: 192px; /* h-48 equivalent */
+  object-fit: cover;
+}
+
+/* Ensure consistent card heights */
+.fixed-card .p-5 {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Hover effects */
+.fixed-card:hover {
+  transform: scale(1.05);
+}
+
+.fixed-card img,
+.fixed-card h5,
+.fixed-card p,
+.fixed-card span,
+.fixed-card button {
+  transition: all 0.2s ease-in-out;
+}
+
+/* Button hover state */
+.fixed-card button:hover svg {
+  transform: scale(1.1);
+}
+
+/* Responsive adjustments */
+@media (max-width: 640px) {
+  .fixed-card {
+    min-height: 280px;
+  }
+}
