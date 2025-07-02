@@ -15,11 +15,7 @@ export class Map implements OnInit {
   constructor(private sanitizer: DomSanitizer) {}
 
   ngOnInit() {
-    console.log('API Key loaded:', this.apiKey);
     const mapUrl = `https://www.google.com/maps/embed/v1/place?key=${this.apiKey}&q=5.336028614724344,-72.3954750525791`;
-    console.log('Full map URL:', mapUrl);
-    
-    // Sanitize the URL to make it safe for Angular
     this.safeMapUrl = this.sanitizer.bypassSecurityTrustResourceUrl(mapUrl);
   }
 }
