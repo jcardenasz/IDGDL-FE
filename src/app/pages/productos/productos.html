@@ -1,10 +1,54 @@
-<div className="grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 p-4">
-    <app-card className="pl-5"
-    title="Guantes de Seguridad"
-    brand="Marca Industrial"
-    [price]="45000"
-    imgSrc="https://picsum.photos/200/300"
-    (addToCart)="onAddToCart($event)">
-  </app-card>
+<div class="container mx-auto px-4 py-8">
+  <h1 class="text-3xl font-bold text-center mb-8 text-white">Nuestros Productos</h1>
+
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 p-4">
+    <app-card
+      title="Guantes de Seguridad"
+      brand="Marca Industrial"
+      [price]="45000"
+      imgSrc="https://picsum.photos/200/100?random=1"
+      (addToCart)="onAddToCart($event)">
+    </app-card>
+
+    <app-card
+      title="Casco de Protección"
+      brand="SafetyPro"
+      [price]="75000"
+      imgSrc="https://picsum.photos/200/100?random=2"
+      (addToCart)="onAddToCart($event)">
+    </app-card>
+
+    <app-card
+      title="Botas de Seguridad"
+      brand="WorkSafe"
+      [price]="120000"
+      imgSrc="https://picsum.photos/200/100?random=3"
+      (addToCart)="onAddToCart($event)">
+    </app-card>
+
+    <app-card
+      title="Chaleco Reflectivo"
+      brand="VisibilityPlus"
+      [price]="35000"
+      imgSrc="https://picsum.photos/200/100?random=4"
+      (addToCart)="onAddToCart($event)">
+    </app-card>
+
+    <app-card
+      title="Gafas de Protección"
+      brand="ClearVision"
+      [price]="25000"
+      imgSrc="https://picsum.photos/200/100?random=5"
+      (addToCart)="onAddToCart($event)">
+    </app-card>
+
+    <app-card
+      title="Mascarilla N95"
+      brand="AirSafe"
+      [price]="15000"
+      imgSrc="https://picsum.photos/200/100?random=6"
+      (addToCart)="onAddToCart($event)">
+    </app-card>
+  </div>
 </div>
 

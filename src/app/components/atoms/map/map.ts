@@ -15,7 +15,7 @@ export class Map implements OnInit {
   constructor(private sanitizer: DomSanitizer) {}
 
   ngOnInit() {
-    const mapUrl = `https://www.google.com/maps/embed/v1/place?key=${this.apiKey}&q=5.336028614724344,-72.3954750525791`;
+    const mapUrl = `https://www.google.com/maps/embed/v1/place?key=${this.apiKey}&q=5.336017636760609,-72.39547043197089&zoom=17`;
     this.safeMapUrl = this.sanitizer.bypassSecurityTrustResourceUrl(mapUrl);
   }
 }
