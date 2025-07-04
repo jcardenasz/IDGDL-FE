@@ -22,6 +22,16 @@ export class Jumbotron implements OnInit, OnDestroy {
     'https://storage.googleapis.com/induguantes-bucket/fachada-07.jpg'
   ];
 
+  backgroundImagesBackup = [
+    'assets/fachada-01.webp',
+    'assets/fachada-02.webp',
+    'assets/fachada-03.webp',
+    'assets/fachada-04.webp',
+    'assets/fachada-05.webp',
+    'assets/fachada-06.webp',
+    'assets/fachada-07.webp',
+  ];
+
   autoSlideInterval = 4000;
   ngOnInit() {
     this.startImageRotation();
