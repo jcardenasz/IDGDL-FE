@@ -1,35 +1,35 @@
 <div class="fixed-card max-w-44 sm:max-w-48 md:max-w-52 lg:max-w-56 xl:max-w-60 hover:scale-105 transition-transform duration-200 overflow-hidden bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
   <!-- Product Image -->
-  <a href="#" class="block">
-    <img 
-      class="rounded-t-lg w-full h-48 object-cover" 
-      [src]="imgSrc" 
+  <a href="/productos" class="block">
+    <img
+      class="rounded-t-lg w-full h-48 object-cover"
+      [src]="imgSrc"
       [alt]="'imagen ' + title"
     />
   </a>
-  
+
   <!-- Card Body -->
   <div class="p-5">
-    <a href="#" class="block">
+    <a href="/productos" class="block">
       <!-- Product Title -->
       <h5 class="text-lg md:text-xl font-semibold tracking-tight text-gray-900 dark:text-white mb-2">
         {{ title }}
       </h5>
     </a>
-    
-    <a href="#" class="block">
+
+    <a href="/productos" class="block">
       <!-- Brand -->
       <p class="mt-1 text-red-600 hover:text-red-700 dark:text-white">
         {{ brand }}
       </p>
     </a>
-    
+
     <div class="flex items-center justify-between gap-x-0.5 mt-3">
       <!-- Price -->
       <span class="text-lg md:text-lg xl:text-xl font-medium text-gray-900 hover:text-red-600 hover:scale-105 dark:text-white">
         ${{ price }} COP
       </span>
-      
+
       <!-- Add to Cart Button -->
       <button
         (click)="onAddToCart()"

@@ -16,6 +16,7 @@
           [price]="product.price"
           [imgSrc]="product.imgSrc"
           (addToCart)="onAddToCart($event)"
+          (click)="productOnClick(product)"
         >
         </app-card>
       </div>

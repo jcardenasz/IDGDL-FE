@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { Card } from '../../components/atoms/card/card';
 import { CardProps } from '../../interfaces/interfaces';
 import { productsMock } from '../../mocks/products.mock';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-productos',
@@ -55,7 +56,12 @@ export class Productos {
     return end > this.totalProducts ? this.totalProducts : end;
   }
 
-  constructor() {}
+  constructor(private router: Router) {}
+
+  productOnClick(product: CardProps): void {
+    console.log('Product clicked:', product.id);
+    this.router.navigate(['productos/:', product.id]);
+  }
 
   onAddToCart(event: any): void {
     console.log('Added to cart:', event);
